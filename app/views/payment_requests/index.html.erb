@@ -1,0 +1,17 @@
+<table>
+  <tr>
+    <th>Description</th>
+    <th>Amount</th>
+    <th>Currency</th>
+    <th>Status</th>
+  </tr>
+  <% @payment_requests.each do |payment_request| %>
+    <tr>
+      <td><%= payment_request.description %></td>
+      <td><%= payment_request.amount %></td>
+      <td><%= payment_request.currency %></td>
+      <td><%= payment_request.status %></td>
+    </tr>
+  <% end %>
+</table>
+<%= link_to "New payment request", new_payment_request_path %>

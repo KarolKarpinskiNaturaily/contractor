@@ -1,0 +1,9 @@
+<%= form_for @payment_request do |form| %>
+  <%= form.label :description %>
+  <%= form.text_field :description %>
+  <%= form.label :amount %>
+  <%= form.number_field :amount %>
+  <%= form.label :currency %>
+  <%= form.text_field :currency %>
+  <%= form.submit %>
+<% end %>
