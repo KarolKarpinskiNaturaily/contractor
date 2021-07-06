@@ -1,0 +1,26 @@
+AllCops:
+  # Only first two digits, e.g. 2.1 for Ruby 2.1.2
+  TargetRubyVersion: 3.0
+  Exclude:
+    - db/migrate/*
+    - bin/*
+    - tmp/**/*
+    - log/*
+    - config/environments/*
+    - config/initializers/*
+    - spec/spec_helper.rb
+    - spec/rails_helper.rb
+
+  DisplayCopNames: true
+  DisplayStyleGuide: false
+  ExtraDetails: false
+
+Documentation:
+  Enabled: false
+
+Metrics/BlockLength:
+  IgnoredMethods: [
+    'namespace', 'describe', 'context', 'let', 'resource', 'resources', 'get',
+    'post', 'patch', 'draw', 'delete', 'define', 'factory', 'example', 'use_cassette',
+    'it_behaves_like', 'shared_examples'
+  ]
