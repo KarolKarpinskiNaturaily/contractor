@@ -1,24 +1,11 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+To run the app:
 
-Things you may want to cover:
+* docker network create communication_network
+* docker-compose run --rm web bundle install
+* docker-compose build
+* docker-compose run --rm web bin/rails db:create bin/rails db:migrate
+* docker-compose up
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Visit localhost:3000
